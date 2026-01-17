@@ -1,0 +1,179 @@
+.journey-section {
+    min-height: 500vh;
+    /* Increased from 400vh to give more scroll room per project */
+    position: relative;
+}
+
+.journey-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-lg) 0;
+}
+
+.journey-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.journey-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl);
+    width: 100%;
+}
+
+/* Progress bar */
+.journey-progress {
+    position: relative;
+    height: 500px;
+    width: 4px;
+    background: var(--color-border);
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.journey-progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-accent);
+    border-radius: 2px;
+    transition: height 0.1s ease-out;
+}
+
+.journey-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-bg-secondary);
+    border: 2px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+.journey-dot.active {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Main card */
+.journey-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    overflow: hidden;
+    width: 60vw;
+    max-width: 1000px;
+    /* Optional max constraint */
+    margin: 0 auto;
+}
+
+.journey-card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.journey-phase {
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+.journey-year {
+    color: var(--color-text-secondary);
+}
+
+/* Image container */
+.journey-image-container {
+    width: 100%;
+    height: 400px;
+    background: var(--color-bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.journey-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    /* Show the top of the website screenshot */
+    transition: transform 0.5s ease;
+}
+
+/* Hover effect on card to zoom image slightly */
+.journey-card:hover .journey-image {
+    transform: scale(1.02);
+}
+
+.journey-card-footer {
+    padding: var(--spacing-lg);
+}
+
+.journey-project-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.journey-project-desc {
+    margin-bottom: var(--spacing-sm);
+}
+
+.journey-link {
+    color: var(--color-accent);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Counter */
+.journey-counter {
+    text-align: center;
+    font-family: var(--font-mono);
+}
+
+.counter-current {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.counter-divider {
+    color: var(--color-border);
+    margin: 0 4px;
+}
+
+.counter-total {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+    .journey-display {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .journey-progress {
+        display: none;
+    }
+
+    .journey-counter {
+        order: -1;
+    }
+
+    .journey-preview {
+        height: 250px;
+    }
+}
