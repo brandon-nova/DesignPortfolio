@@ -133,6 +133,7 @@ const Journey = () => {
     }, []);
 
     const currentProject = journeyProjects[activeIndex];
+    const assetUrl = `${import.meta.env.BASE_URL}${currentProject.image.replace(/^\//, '')}`;
 
     return (
         <section id="journey" className="journey-section" ref={containerRef}>
@@ -165,7 +166,7 @@ const Journey = () => {
                             {/* Project Image */}
                             <div className="journey-image-container">
                                 <img
-                                    src={currentProject.image}
+                                    src={assetUrl}
                                     alt={currentProject.name}
                                     className="journey-image"
                                 />

@@ -11,7 +11,7 @@ const Header = () => {
                 </Link>
                 <nav className="nav">
                     <Link to="/projects" className="nav-link">Projects</Link>
-                    <a href="#journey" className="nav-link">Journey</a>
+                    <Link to="/#journey" className="nav-link">Journey</Link>
                     <a
                         href="https://www.linkedin.com/in/brandon-nova"
                         target="_blank"

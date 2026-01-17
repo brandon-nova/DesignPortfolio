@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import '../styles/Hero.css';
 
 const Hero = () => {
+    const base = import.meta.env.BASE_URL;
+
     return (
         <section className="hero">
             <div className="video-background">
                 <video autoPlay loop muted playsInline className="hero-video">
-                    <source src="/assets/Portfolio.mp4" type="video/mp4" />
+                    <source src={`${base}assets/Portfolio.mp4`} type="video/mp4" />
                 </video>
                 <div className="video-overlay"></div>
             </div>

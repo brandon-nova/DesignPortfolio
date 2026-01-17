@@ -18,7 +18,7 @@ function HomePage() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="app">
         <Header />
         <main>
