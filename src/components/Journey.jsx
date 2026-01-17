@@ -5,7 +5,7 @@ import '../styles/Journey.css';
 const journeyProjects = [
     {
         name: 'Schoolpool',
-        description: 'My first web project. Basic functionality, minimal design consideration.',
+        description: 'One of the first sites I made. Basic functionality, minimal design consideration.',
         url: 'https://schoolpool.app',
         phase: 'The Beginning',
         year: '2022',
@@ -14,16 +14,16 @@ const journeyProjects = [
     },
     {
         name: 'DiceAndDare',
-        description: 'Experimenting with interactivity. Still learning the fundamentals.',
+        description: 'Learned that hosting a bunch of videos is really expensive, but that html can make a decent site.',
         url: 'https://diceanddare.app',
-        phase: 'Early Experiments',
+        phase: 'Early Experiment',
         year: '2022',
         image: '/assets/projects/diceanddare.png',
         gradient: 'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)'
     },
     {
         name: 'Storyse',
-        description: 'Starting to understand layout and user flow.',
+        description: 'Wanted to learn AI apis, this was one of my first app so many mistakes made along the way.',
         url: 'https://storyse.com',
         phase: 'Finding Direction',
         year: '2023',
@@ -32,7 +32,7 @@ const journeyProjects = [
     },
     {
         name: 'LessCent',
-        description: 'First attempts at cohesive color schemes and typography.',
+        description: 'First attempts at making an app where users could affect each other, did not pursue userbase.',
         url: 'https://www.lesscent.com',
         phase: 'Design Awareness',
         year: '2023',
@@ -41,7 +41,7 @@ const journeyProjects = [
     },
     {
         name: 'FinFree',
-        description: 'Improved understanding of user experience principles.',
+        description: 'First attempt at mobile/web integrated development. I realized it\'s hard for users to tell what this is, didn\'t fix but rememebered that.',
         url: 'https://finfree.me',
         phase: 'Growing Skills',
         year: '2023',
@@ -50,7 +50,7 @@ const journeyProjects = [
     },
     {
         name: 'PawPulse',
-        description: 'Better component architecture and visual hierarchy.',
+        description: 'This was a social media with matching but got turned into a landing page due to partner decision. Learned color schemes.',
         url: 'https://pawpulse.org',
         phase: 'Refinement',
         year: '2024',
@@ -68,7 +68,7 @@ const journeyProjects = [
     },
     {
         name: 'Finnodec',
-        description: 'Clean, modern design with strong visual identity.',
+        description: 'Clean, modern design with strong visual identity. This site is to manage long term investments.',
         url: 'https://finnodec.com',
         phase: 'Mastery',
         year: '2025',
