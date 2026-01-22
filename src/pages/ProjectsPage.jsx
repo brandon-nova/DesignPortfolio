@@ -72,8 +72,11 @@ const ProjectsPage = () => {
     return (
         <div className="projects-page">
             <div className="container">
-                <Link to="/" className="back-link">← Back to Home</Link>
-                <h1 className="page-title">Projects</h1>
+                <div className="projects-page-header">
+                    <Link to="/" className="back-link">← Back to Home</Link>
+                    <h1 className="page-title">Projects</h1>
+                    <div className="projects-page-header-spacer" aria-hidden="true" />
+                </div>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
                         <a
